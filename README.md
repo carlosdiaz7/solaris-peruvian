@@ -3,7 +3,7 @@
 Proyecto web de **Soleil Style** desarrollado con Node.js.
 
 ## 👥 Equipo
-* Carlos Diaz Zamora
+* Carlos Diaz
 * Fabiana Nicole Alavedra Flores
 * Yajaira Rodriguez
 * Anthony Segundo Tejada Chugden
