@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Libro de Reclamaciones | SOLEIL STYLE</title>
+
+    <meta name="description"
+        content="Libro de reclamaciones oficial de Soleil Style.">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon"
+        href="assets/img/portadas/logo.jpeg"
+        type="image/x-icon">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&family=Epilogue:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- INTL TEL INPUT -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/css/intlTelInput.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="assets/css/estilos.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm navbar-custom">
+
+            <div class="container">
+
+                <a href="index.html" class="logo-tienda">
+
+                    <span class="lune">SOLEIL</span><br>
+                    <span class="peruvian">S T Y L E</span>
+
+                </a>
+
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarNav">
+
+                    <ul class="navbar-nav gap-lg-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                                href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                                href="productos.html">
+                                Productos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                                href="nosotros.html">
+                                Nosotros
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                                href="contactos.html">
+                                Contactos
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="main-reclamos">
+
+        <section class="container">
+
+            <div class="form-container">
+
+                <div class="text-center mb-5">
+
+                    <h1 class="display-5 mb-3">
+                        Libro de Reclamaciones
+                    </h1>
+
+                    <p class="text-muted">
+                        Completa el formulario y nos contactaremos contigo.
+                    </p>
+
+                </div>
+
+                <!-- FORM -->
+
+                <form id="pedidoForm">
+
+                    <div class="row g-4">
+
+                        <!-- NOMBRE -->
+
+                        <div class="col-md-6">
+
+                            <label for="nombre" class="form-label">
+                                Nombre Completo *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                class="form-control"
+                                required
+                                placeholder="Tu nombre">
+
+                        </div>
+
+                        <!-- CORREO -->
+
+                        <div class="col-md-6">
+
+                            <label for="correo" class="form-label">
+                                Correo Electrónico *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="correo"
+                                class="form-control"
+                                required
+                                placeholder="ejemplo@gmail.com">
+
+                            <small class="text-danger">
+                                Solo correos Gmail.
+                            </small>
+
+                        </div>
+
+                        <!-- TELEFONO -->
+
+                        <div class="col-md-6">
+
+                            <label for="telefono" class="form-label">
+                                Teléfono *
+                            </label>
+
+                           <input
+                            type="tel"
+                            id="telefono"
+                         class="form-control"
+                         required>
+
+                            <small
+                                id="telefonoError"
+                                class="text-danger d-none">
+
+                                Número inválido
+
+                            </small>
+
+                        </div>
+
+                        <!-- DIRECCION -->
+
+                        <div class="col-md-6">
+
+                            <label for="direccion" class="form-label">
+                                Dirección *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="direccion"
+                                class="form-control"
+                                required
+                                placeholder="Tu dirección">
+
+                        </div>
+
+                        <!-- MODALIDAD -->
+
+                        <div class="col-md-6">
+
+                            <label for="modalidad" class="form-label">
+                                Modalidad de Compra *
+                            </label>
+
+                            <select
+                                id="modalidad"
+                                class="form-select"
+                                required>
+
+                                <option value="">
+                                    Selecciona modalidad
+                                </option>
+
+                                <option value="Presencial">
+                                    Presencial
+                                </option>
+
+                                <option value="Virtual">
+                                    Virtual
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- DESCRIPCION -->
+
+                        <div class="col-12">
+
+                            <label for="descripcion" class="form-label">
+                                Descripción *
+                            </label>
+
+                            <textarea
+                                id="descripcion"
+                                rows="6"
+                                class="form-control"
+                                required
+                                placeholder="Describe tu reclamo">
+                            </textarea>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BOTON -->
+
+                    <div class="text-center mt-5">
+
+                        <button
+                            type="submit"
+                            class="btn btn-custom">
+
+                            Enviar Reclamo
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+   <footer class="footer-custom py-5">
+
+    <div class="container">
+
+        <div class="row text-center text-md-start g-4 justify-content-between align-items-start">
+
+            <!-- LOGO -->
+            <div class="col-md-2">
+
+                <div class="footer-logo-container">
+
+                    <img src="assets/img/portadas/logo.jpeg"
+                         class="footer-logo-img"
+                         alt="Logo Solaris">
+
+                </div>
+
+            </div>
+
+            <!-- TIENDA -->
+            <div class="col-md-2">
+
+                <h6 class="footer-title">
+                    TIENDA
+                </h6>
+
+                <ul class="list-unstyled d-grid gap-2">
+
+                    <li>
+                        <a href="nosotros.html"
+                           class="footer-link">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="productos.html"
+                           class="footer-link">
+                            Productos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contactos.html"
+                           class="footer-link">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- INSPIRACIONES -->
+            <div class="col-md-2">
+
+                <h6 class="footer-title">
+                    INSPIRACIONES
+                </h6>
+
+                <ul class="list-unstyled d-grid gap-2">
+
+                    <li>
+                        <a href="https://pe.hm.com/"
+                           target="_blank"
+                           class="footer-link">
+                            H&M
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.aeo.com.pe/"
+                           target="_blank"
+                           class="footer-link">
+                            AMERICAN EAGLE
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://corporaciontextil.com.pe/"
+                           target="_blank"
+                           class="footer-link">
+                            CORP. TEXTIL
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- REDES -->
+            <div class="col-md-3">
+
+                <h6 class="footer-title">
+                    REDES SOCIALES
+                </h6>
+
+                <ul class="list-unstyled d-grid gap-2">
+
+                    <li>
+                        <a href="https://instagram.com/luneperuvian"
+                           target="_blank"
+                           class="footer-link d-flex align-items-center gap-2">
+
+                            <i class="bi bi-instagram"></i>
+                            <span>@soleilstyle</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://facebook.com/luneperuvian"
+                           target="_blank"
+                           class="footer-link d-flex align-items-center gap-2">
+
+                            <i class="bi bi-facebook"></i>
+                            <span>/soleilstyle</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://tiktok.com/@luneperuvian"
+                           target="_blank"
+                           class="footer-link d-flex align-items-center gap-2">
+
+                            <i class="bi bi-tiktok"></i>
+                            <span>@soleilstyle</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="text-center mt-5 pt-4 border-top border-secondary-subtle">
+
+            <p class="small text-muted mb-0">
+                &copy; 2026 Solaris Peruvian. Hecho con amor.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- INTL TEL INPUT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/js/intlTelInput.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/js/utils.js"></script>
+
+<!--  JS -->
+<script src="assets/js/script.js"></script>
+   
+
+</body>
+
+</html>
