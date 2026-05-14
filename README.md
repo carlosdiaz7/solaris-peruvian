@@ -4,11 +4,11 @@ Proyecto web de **Soleil Style** desarrollado con Node.js.
 
 ## 👥 Equipo
 * Carlos Diaz
-* Fabiana Nicole Alavedra Flores
+* Fabiana Alavedra 
 * Yajaira Rodriguez
-* Anthony Segundo Tejada Chugden
-* Eliseo López Figueroa
-* Andrés de la Cruz Vilcadano
+* Anthony Tejada
+* Eliseo López 
+* Andrés de la Cruz 
 
 ## 🚀 Guía de Inicio rápido
 
